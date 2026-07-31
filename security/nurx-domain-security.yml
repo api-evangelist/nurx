@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: app.nurx.co
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Oct  1 23:59:59 2026 GMT
+  hsts: false
+domains:
+- domain: nurx.co
+  dnssec: false
+  caa:
+  - 0 issuewild "letsencrypt.org"
+  - 0 issuewild "amazon.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

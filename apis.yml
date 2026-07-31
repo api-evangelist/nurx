@@ -1,4 +1,16 @@
 aid: nurx
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nurx.png
 name: Nurx
 description: 'Nurx is a company surfaced as a portfolio company of union-square-ventures, y-combinator
   and added to the API Evangelist network as a stub for enrichment. Sector: health. This profile is a
@@ -13,10 +25,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Health
+- Telehealth
+- Pharmacy
+- Women's Health
+- Reproductive Health
+- Prescriptions
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +41,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nurx-domain-security.yml
 - type: Website
   url: https://app.nurx.co
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
